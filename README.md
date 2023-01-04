@@ -8,7 +8,8 @@ Please find attached my FSM, State-Transition Table, Karnaugh Map, and the Equat
 Best regards,
 Shaan.
 
-[SHAAN KISHORE GUNWANI SCIENTIFIC COMPUTING FSM PROJECT.pdf](https://github.com/ShaanGunwani/Shaan_Kishore_Gunwani_Scientific_Computing_FSM_Project/files/10334282/SHAAN.KISHORE.GUNWANI.SCIENTIFIC.COMPUTING.FSM.PROJECT.pdf)
+
+[Shaan Kishore Gunwani Scientific Computing Project Work.pdf](https://github.com/ShaanGunwani/Shaan_Kishore_Gunwani_Scientific_Computing_FSM_Project/files/10341960/Shaan.Kishore.Gunwani.Scientific.Computing.Project.Work.pdf)
 
 
 
