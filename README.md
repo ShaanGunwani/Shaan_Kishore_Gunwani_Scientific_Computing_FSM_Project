@@ -34,12 +34,17 @@ State - D1_is_1 -> Code - "010",
 D0_not_1 -> Code - "011",
 State - D1_not_1 -> Code - "100".
 
-![image](https://user-images.githubusercontent.com/114371881/211466569-fcae69c9-7b81-4838-b977-fcf7e83aa2f2.png)
+
+![image](https://user-images.githubusercontent.com/114371881/211467508-42a95eb0-5505-49ad-a7f4-f1075d85791f.png)
+
 
 
 
 # Karnaugh Maps 
 
+
+![image](https://user-images.githubusercontent.com/114371881/211467627-6e84c6b3-15d2-4514-8999-20f1c017c086.png)
+![image](https://user-images.githubusercontent.com/114371881/211467746-0889cc0e-76fa-4fa4-b0fe-2bbe1cbd8fa7.png)
 
 
 NAME : SHAAN KISHORE GUNWANI
