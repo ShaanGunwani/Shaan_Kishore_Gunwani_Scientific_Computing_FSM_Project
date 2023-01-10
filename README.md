@@ -2,7 +2,7 @@
 
 
 
-# Serial Bit Sequence Detector FSM
+# Serial Bit Sequence Detector
 
 
 # Description
@@ -19,6 +19,9 @@ To implement this design, we need a machine that can keep track of the number of
 
 ![image](https://user-images.githubusercontent.com/114371881/211448462-7ac81b5f-4b36-4c23-86ba-a7fa8e0f6a14.png)
 
+![image](https://user-images.githubusercontent.com/114371881/211466460-44f3069d-1ac1-4df3-a068-a21ce762ef1f.png)
+
+
 
 
 # State Encoding 
@@ -30,6 +33,9 @@ State - D0_is_1 -> Code - "000",
 State - D1_is_1 -> Code - "010", 
 D0_not_1 -> Code - "011",
 State - D1_not_1 -> Code - "100".
+
+![image](https://user-images.githubusercontent.com/114371881/211466569-fcae69c9-7b81-4838-b977-fcf7e83aa2f2.png)
+
 
 
 # Karnaugh Maps 
