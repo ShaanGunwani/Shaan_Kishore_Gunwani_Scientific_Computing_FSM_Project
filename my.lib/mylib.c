@@ -5,7 +5,8 @@ The monitor_bits function is responsible for monitoring the incoming bit stream 
 The get_err function is used to check the current state of the machine and check if an error occurred in the transmitter or not. 
 The monitor_bits function takes an input parameter Din, which is the incoming bit, 
 and it updates the current state variables Q2_cur, Q1_cur, Q0_cur, Q2_nxt, Q1_nxt, Q0_nxt based on the current state of the machine and the incoming bit. 
-It also updates the err variable based on the current state of the machine and the incoming bit.*/
+It also updates the err variable based on the current state of the machine and the incoming bit.
+The get_err function returns the value of the err variable, which indicates if an error occurred in the transmitter or not.*/
 
 
 
