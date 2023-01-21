@@ -1,59 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "mylib.h"
 
-
-int main()
-{
-
-    //Declare all inputs and get user input for these inputs
+int main() {
     int Din;
-    int Q2_cur;
-    int Q1_cur;
-    int Q0_cur;
-
-
-    printf("Enter the input value for Din: ");
-    scanf("%d", &Din);
-    printf("Enter the input value for Q2_cur: ");
-    scanf("%d", &Q2_cur);
-    printf("Enter the input value for Q1_cur: ");
-    scanf("%d", &Q1_cur);
-    printf("Enter the input value for Q0_cur: ");
-    scanf("%d", &Q0_cur);
-
-
-
-
-    printf("Q2_cur: %d ", Q2_cur);
-    printf("Q1_cur: %d ", Q1_cur);
-    printf("Q0_cur: %d ", Q0_cur);
-    printf("Din: %d \n", Din);
-
-
-
-    if ( (Q2_cur!=1) && (Q1_cur!=1) && (Q0_cur!=1)){
-        printf("Output = 0(No Error)");
-
-
+    while (1) { // infinite loop to continuously read incoming bits
+        printf("Enter the incoming bit: ");
+        scanf("%d", &Din);
+        monitor_bits(Din);
+        if (get_err() == ERROR) {
+            printf("Error detected!\n");
+        }
     }
-
-    else if (((Q2_cur!=1) && (Q1_cur!=1) && (Q0_cur!=1) && (Din!=1))||((Q1_cur!=1) && (Q0_cur==1) && (Din==1))){
-        printf("Output = 0(No Error)");
-
-
-    }
-
-    else if (((Q1_cur==1) && (Q0_cur==1))||((Q0_cur==1) && (Din!=1))){
-        printf("Output = 0(No Error)");
-
-
-    }
-
-    else if ((Q1_cur==1) && (Q0_cur!=1) && (Din==1)){
-        printf("Output = ERR(1)");
-
-    }
-    else{
-        printf("Output = No Error");
-    }
+    return 0;
 }
+
+
+/* In this code, the main function continuously reads an incoming bit from the user and calls the "monitor_bits" function from the mylib.c file with this incoming bit as an argument.
+Then it calls the "get_err" function from the mylib.c file, and if it returns ERROR, it prints "Error detected!" to the console. */ 
