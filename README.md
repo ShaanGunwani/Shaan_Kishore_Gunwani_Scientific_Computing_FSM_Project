@@ -16,7 +16,9 @@ Designing a circuit that will monitor an incoming serial bit stream. The informa
 
 To implement this design, we need a machine that can keep track of the number of the incoming bits. In this way, the machine will know once the three bits within a sequence have been received. The machine must also track if the sequence of the incoming bits are 1's. In order to do this, we create a sequence of states that will be traversed when Din = 1. We also need a parallel sequence of states that will be traversed if an incoming bit is ever a 0. Each of these parallel paths must contain enough states to track that three bits of the sequence have been received before starting over and monitoring the next incoming sequence. To simplify the state diagram, the output ERR = 1 is only listed once next to the corresponding transition in the diagram. It is assumed that all other times, ERR = 0. 
 
-<img width="157" alt="image" src="https://user-images.githubusercontent.com/114371881/213867069-3a283eeb-4d3f-498e-b431-21c2fcbfa5ce.png">
+
+<img width="301" alt="image" src="https://user-images.githubusercontent.com/114371881/213867207-c55400ea-543b-4a1f-9e98-10b3bb4880ef.png">
+
 
 
 ![image](https://user-images.githubusercontent.com/114371881/211466460-44f3069d-1ac1-4df3-a068-a21ce762ef1f.png)
