@@ -1,7 +1,11 @@
 #ifndef MYLIB_H
 #define MYLIB_H
 
-void monitor_bits(int incoming_bit);
-int get_err(void);
+#define NO_ERROR 0
+#define ERROR 1
 
-#endif /* MYLIB_H */
+void monitor_bits(int Din);
+int get_err();
+
+#endif
+
