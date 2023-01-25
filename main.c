@@ -1,3 +1,31 @@
+// This C code is an implementation of a finite state machine that monitors an incoming serial bit stream. The information in the bit stream represents data in groups of three bits. The code "111" represents that an error has occurred in the transmitter. The system needs to monitor the incoming bit stream and assert a signal called "ERR" if the sequence "111" is detected.
+
+// The main function reads the incoming bit from the user using the scanf function and passes it as an argument to the "monitor_bits" function. The "monitor_bits" function updates the current state variables and the error signal based on the incoming bit and the current state.
+
+//  The "monitor_bits" function has the following main tasks:
+
+// Initialize the next state variables and the error signal variable
+// Implement the state transition logic:
+// If the input bit is '1'
+// Shift the current state to the next state
+// Check if the current state is "111"
+// If yes, assert the ERR signal
+// If the input bit is '0'
+// Reset the current state to "000"
+// Update the current state variables with the next state variables
+// The "main" function is a infinite loop that reads the input from the user and calls the monitor_bits function to update the state of the finite state machine and check the error signal. Then it will check if the error signal is set to NO_ERROR or ERROR and print the corresponding output.
+
+// Also, the code defines two constants NO_ERROR and ERROR, which are assigned the values 0 and 1 respectively. These constants are used to check the value of the error signal and print the corresponding output.
+
+// The infinite loop in the main function makes the program continuously running, it will keep running and waiting for the user input until the program is terminated manually.
+
+
+
+
+
+
+
+
 #include <stdio.h>
 
 #define NO_ERROR 0
