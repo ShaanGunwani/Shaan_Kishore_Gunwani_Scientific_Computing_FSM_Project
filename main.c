@@ -42,7 +42,7 @@ void monitor_bits(int Din) {
 int main() {
     int Din;
     while (1) {
-        printf("Enter the input value for Sequence Detector: "); 
+        printf("Enter the input value for Sequence Detector (Please input one bit at a time (1/0)): "); 
         scanf("%d", &Din);
         monitor_bits(Din);
 
